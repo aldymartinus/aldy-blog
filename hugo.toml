@@ -1,0 +1,23 @@
+baseURL = 'https://aldymartinus.netlify.app/'
+languageCode = 'en-us'
+title = "Aldy's Blog"
+theme = "memoir-blue"
+
+[menu]
+    [[menu.mainmenu]]
+    identifier = "articles"
+    name = "Articles"
+    url = "/articles"
+    weight = 1
+
+    [[menu.mainmenu]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 2
+
+    [[menu.mainmenu]]
+    identifier = "tracklist"
+    name = "Tracklist"
+    url = "/tracklist"
+    weight = 3
