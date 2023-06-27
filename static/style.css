@@ -1,0 +1,149 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.list {
+    margin: 0.2rem 0.3rem;
+    padding: 0.3rem;
+    border-bottom: 1px solid #ccc;
+}
+.list h3 {
+    font-size: 1rem;
+    color: #4165ba;
+}
+.list h3 a{
+    text-decoration: none;
+}
+.list h3:hover{
+    text-decoration: underline;
+}
+.list h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #777;
+}
+.list h3 a:visited {
+    color: #4165ba;
+}
+.nav-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav-list a {
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.6rem 0;
+    text-decoration: none;
+    color: #111;
+}
+.nav-list a:nth-child(-n + 3) {
+    width: 90%;
+    border-bottom: 1px solid #cfcfcf;
+}
+.nav-list a:visited{
+    color: #111;
+}
+#container {
+    margin: 0 auto;
+    width: 50%;
+}
+#floating-icon {
+    cursor: pointer;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #4165ba;
+    position: fixed;
+    bottom: 3rem;
+    border-radius: 100%;
+    font-size: 2rem;
+    padding: 0.7rem;
+    color: white;
+}
+#content {
+    height: 100vh;
+    border: 1px solid #e5e5e5;
+} 
+#modal {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+
+    overflow: hidden;
+    width: 40%;
+    height: 30vh;
+    text-align: center;
+    background-color: #f7f7f8;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    top: 25%;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+#modal[open] {
+    overflow: hidden;
+    opacity: 1;
+    pointer-events: inherit;
+}
+#modal::backdrop {
+    overflow: hidden;
+     background-color: rgba(0,0,255, 0.2);
+}
+#modal h3 {
+    margin:  0 0 0rem 0;
+    padding: 0 0 0.3rem 0;
+    border-bottom: 1px solid #c4c2c2;
+    font-size: large;
+    color: #111;
+}
+#close-btn {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9em;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    background-color: #4165ba;
+    margin: 0.8rem;
+}
+#modal::backdrop {
+    backdrop-filter: blur(2px);
+    opacity: 50%;
+    background-color: #333;
+}
+@media screen and (max-width: 900px) {
+    body {
+        scrollbar-width: thin;
+        width: 100%;
+        border: none;
+    }
+    footer {
+        font-size: 0.8em;
+        width: 100%;
+    }
+    header h3 {
+        font-size: 0.8rem;
+        margin: 0.5rem 0.4rem;
+    }
+    nav {
+        display: none;
+    }
+    #container {
+        width: 100%;
+    }
+    #content {
+        border: none;
+    }
+    .subheader {
+        display: contents;
+    }
+    #floating-icon {
+        user-select: none;
+        display: block;
+    }
+}

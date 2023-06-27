@@ -6,10 +6,9 @@
         <dialog id="modal">
             <h3>MENU</h3>
             <div class="nav-list">
-                <a href="">Articles</a>
-                <a href="">Projects</a>
-                <a href="">Tracklist</a>
-                <a href="">Thoughts</a>
+                <a href="/articles">Articles</a>
+                <a href="/projects">Projects</a>
+                <a href="/tracklist">Tracklist</a>
             </div>
             <button id="close-btn">Close</button>
         </dialog>
@@ -51,11 +50,7 @@
     nav h4:hover {
         text-decoration: underline;
     }
-</style><div class="subheader">
-    <h5>Articles</h5>
-</div>
-
-<style>
+</style><style>
     * {
         margin: 0;
         padding: 0;
@@ -84,20 +79,12 @@
         font-size: 1rem;
         margin: 0.5rem 1rem;
     }
-    .subheader {
-        display: none;
-    }
-    .subheader h5 {
-        text-align: center;
-        padding: 0.2rem 0;
-        background-color: #f7f7f8;
-        border-bottom: 1px solid #e1e1e1;
-    }
+
 </style>
 <div id="content">
                
                     <div class="list">
-                         <h3><a href="https://aldymartinus.netlify.app/categories/article/">Article</a></h3>
+                         <h3><a href="/categories/article/">Article</a></h3>
                          <h4>Last updated: Tue, Jun 20 2023</h4>
                     </div>
                
@@ -132,25 +119,27 @@
         font-family: Verdana, Tahoma, sans-serif;
     }
     .list {
-     margin: 0 0.4rem;
-     padding: 0.3rem;
-     border-bottom: 1px solid black;
+        margin: 0.2rem 0.3rem;
+        padding: 0.3rem;
+        border-bottom: 1px solid #ccc;
     }
     .list h3 {
-     color: #4165ba;
+        font-size: 1rem;
+        color: #4165ba;
     }
     .list h3 a{
-     text-decoration: none;
+        text-decoration: none;
     }
     .list h3:hover{
-     text-decoration: underline;
+        text-decoration: underline;
     }
     .list h4 {
-     font-weight: 500;
-     color: #777;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #777;
     }
     .list h3 a:visited {
-     color: #4165ba;
+        color: #4165ba;
     }
     .nav-list {
         align-items: center;
@@ -161,7 +150,7 @@
         font-weight: 400;
         font-size: 1.1rem;
         font-family: Tahoma, Geneva, Verdana, sans-serif;
-        padding: 0.4rem 0;
+        padding: 0.6rem 0;
         text-decoration: none;
         color: #111;
     }
@@ -200,7 +189,7 @@
 
         overflow: hidden;
         width: 40%;
-        height: 35vh;
+        height: 30vh;
         text-align: center;
         background-color: #f7f7f8;
         border: 1px solid #e1e1e1;
@@ -219,8 +208,8 @@
          background-color: rgba(0,0,255, 0.2);
     }
     #modal h3 {
-        margin:  0 0 0.5rem 0;
-        padding: 0 0 0.4rem 0;
+        margin:  0 0 0rem 0;
+        padding: 0 0 0.3rem 0;
         border-bottom: 1px solid #c4c2c2;
         font-size: large;
         color: #111;

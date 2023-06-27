@@ -6,9 +6,9 @@
         <dialog id="modal">
             <h3>MENU</h3>
             <div class="nav-list">
-                <a href="">Articles</a>
-                <a href="">Projects</a>
-                <a href="">Tracklist</a>
+                <a href="/articles">Articles</a>
+                <a href="/projects">Projects</a>
+                <a href="/tracklist">Tracklist</a>
             </div>
             <button id="close-btn">Close</button>
         </dialog>
@@ -50,11 +50,7 @@
     nav h4:hover {
         text-decoration: underline;
     }
-</style><div class="subheader">
-    <h5>Articles</h5>
-</div>
-
-<style>
+</style><style>
     * {
         margin: 0;
         padding: 0;
@@ -83,20 +79,24 @@
         font-size: 1rem;
         margin: 0.5rem 1rem;
     }
-    .subheader {
-        display: none;
-    }
-    .subheader h5 {
-        text-align: center;
-        padding: 0.2rem 0;
-        background-color: #f7f7f8;
-        border-bottom: 1px solid #e1e1e1;
-    }
+
 </style>
 <div id="content">
                 
                 <div class="list">
                      
+                        
+                            <div id="thought">
+                                <div id="thought-header">
+                                    <h4>Cubing Ideal Hobby</h4>
+                                    <p>Tue, Jun 27 2023</p>
+                                </div>
+                                <p><p>When boredom strike to you suddenly and you need some new hobby to waste your time
+and cure your boredom, learning to solve rubiks cube (cubing) maybe a good hobby to pickup
+because it&rsquo;s actually a fun hobby with deep learning curve, so you can waste your time to get good
+at solving cube, btw you can get a pretty decent cube less than a dollar.</p>
+</p>
+                            </div>
                         
                             <div id="thought">
                                 <div id="thought-header">
@@ -141,7 +141,9 @@
         font-family: Verdana, Tahoma, sans-serif;
     }
     #thought-header {
-        border-bottom: 1px solid #333;
+        padding: 0 0 0.1rem 0;
+        margin: 0 0 0.1rem 0 ;
+        border-bottom: 1px solid #999;
         justify-content: space-between;
         display: flex;
         flex-direction: row;
@@ -152,7 +154,7 @@
     }
     #thought {
         text-align: justify;
-        margin: 0.5rem;
+        margin: 0.5rem 0.5rem 0.7rem 0.5rem;
         display: flex;
         flex-direction: column;
     }
@@ -254,6 +256,9 @@
         footer {
             font-size: 0.8em;
             width: 100%;
+        }
+        #thought {
+            font-size: 0.9rem;
         }
         header h3 {
             font-size: 0.8rem;

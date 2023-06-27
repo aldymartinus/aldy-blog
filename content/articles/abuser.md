@@ -5,7 +5,7 @@ draft: false
 categories: "Article"
 ---
 
-{{< youtube m5Js8W_7FxE >}}
+![Todoroki Angus lagi engas](https://i.imgflip.com/1rc2ax.jpg)
 
 
 Seperti yang kita tahu **endeba** mempunyai 4 anak, cukimai kali dia ini, dahlah tak bise ngurus anak, malah bikin anak terus, kesian biak biak die, punya bapak pecundang macam **endeba** inilah biak-biak kepunyaan die: 

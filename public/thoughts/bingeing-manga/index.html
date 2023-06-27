@@ -6,10 +6,9 @@
         <dialog id="modal">
             <h3>MENU</h3>
             <div class="nav-list">
-                <a href="">Articles</a>
-                <a href="">Projects</a>
-                <a href="">Tracklist</a>
-                <a href="">Thoughts</a>
+                <a href="/articles">Articles</a>
+                <a href="/projects">Projects</a>
+                <a href="/tracklist">Tracklist</a>
             </div>
             <button id="close-btn">Close</button>
         </dialog>
@@ -51,11 +50,7 @@
     nav h4:hover {
         text-decoration: underline;
     }
-</style><div class="subheader">
-    <h5>Articles</h5>
-</div>
-
-<style>
+</style><style>
     * {
         margin: 0;
         padding: 0;
@@ -84,15 +79,7 @@
         font-size: 1rem;
         margin: 0.5rem 1rem;
     }
-    .subheader {
-        display: none;
-    }
-    .subheader h5 {
-        text-align: center;
-        padding: 0.2rem 0;
-        background-color: #f7f7f8;
-        border-bottom: 1px solid #e1e1e1;
-    }
+
 </style>
 <div id="content">
                 <div id="content-head">
@@ -105,8 +92,8 @@
                     <a href="">#burn</a>
                     <a href="">#loser</a>
                 </div>
-                <p>Been bingeing on some manga these weeks, Dandadan was so good that I finish it less than 3 days and now I craving for the next chapters, 20th century boys too, it give some stranger things vibes with different approach, and I think someday, when this got any chance to be animated, King gnu should be the one making it&rsquo;s soundtrack and songs.</p>
-
+                <main><p>Been bingeing on some manga these weeks, Dandadan was so good that I finish it less than 3 days and now I craving for the next chapters, 20th century boys too, it give some stranger things vibes with different approach, and I think someday, when this got any chance to be animated, King gnu should be the one making it&rsquo;s soundtrack and songs.</p>
+</main>
             </div><footer>
     Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
 </footer>
@@ -136,6 +123,9 @@
         width: 100%;
         height: 100vh;
         font-family: Verdana, Tahoma, sans-serif;
+    }
+    main {
+        font-size: 0.9rem;
     }
     #update-time {
         color: #666;
