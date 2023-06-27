@@ -23,7 +23,7 @@
             <div id="content">
                {{ range .Pages }}
                     <div class="list">
-                         <h3><a href="{{.Permalink}}">{{ .Title }}</a></h3>
+                         <h3><a href="{{.RelPermalink}}">{{ .Title }}</a></h3>
                          <h4>Last updated: {{ .Date.Format "Mon, Jan 2 2006" }}</h4>
                     </div>
                {{ end }}
