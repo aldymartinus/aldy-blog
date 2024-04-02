@@ -1,16 +1,44 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Aldy's Blog";
+const thoughts = await Astro.glob('../pages/thoughts/*.md');
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle = { pageTitle }>
+    {
+        thoughts.map((t) => {
+            const pubDate = new Date(t.frontmatter.pubDate).toUTCString().slice(0,16);
+            return (
+            <div class="txt-container">
+            <div id="head">
+                <span id="title">{t.frontmatter.title}</span>
+                <span id="date">{pubDate}</span>       
+            </div>
+            <div id="content">
+                <t.Content />
+            </div>
+        </div>
+            )
+        })   
+    }
+</BaseLayout>
+
+<style>
+    .txt-container {
+        margin: 0.5rem;
+    }
+    #head {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #999;
+        padding: 0 0 -0.8rem 0;
+        margin: 0 0 -0.8rem 0;
+    }
+    #title {
+        font-weight: bold;
+    }
+    #date {
+        font-size: 0.8rem;
+        color: #333;
+    }
+</style>

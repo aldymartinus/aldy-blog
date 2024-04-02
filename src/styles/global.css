@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+main {
+    margin:  0rem 0 0 0;
+    background-color: #fff;
+    border: 1px solid black;
+    height: 100vh;
+    border: 1px solid #e5e5e5;
+}
