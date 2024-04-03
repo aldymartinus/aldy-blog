@@ -1,11 +1,6 @@
 ---
-title: My Fourth Blog Post
-author: Astro Learner
-description: "This post will show up on its own!"
-image:
-    url: "https://docs.astro.build/default-og-image.png"
-    alt: "The word astro against an illustration of planets and stars."
-pubDate: 2022-08-08
-tags: ["astro", "successes"]
+title: Bingeing Manga
+author: Aldy Martinus
+pubDate: 2023-06-25
 ---
-This post should show up with my other blog posts, because `Astro.glob()` is returning a list of all my posts in order to create my list.
+Been bingeing on some manga these weeks, Dandadan was so good that I finish it less than 3 days and now I craving for the next chapters, 20th century boys too, it give some stranger things vibes with different approach, and I think someday, when this got any chance to be animated, King gnu should be the one making it’s soundtrack and songs.
