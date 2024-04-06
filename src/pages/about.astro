@@ -1,7 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
 const pageTitle = 'About';
+const bio = await Astro.glob('../pages/about.md');
 ---
 <BaseLayout pageTitle = {pageTitle}>
-	<h1>It's me</h1>
+	{
+		bio.map((m) => {
+			return <div id="profile"><m.Content /></div>
+		})
+	}
 </BaseLayout>
+
+<style>
+	#profile {
+		margin: 1.5rem;
+	}
+</style>
