@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro'
 import '../styles/global.css'
-const { pageTitle } = Astro.props;  
+const { pageTitle, frontmatter } = Astro.props;  
 ---
 
 <html lang="en">
@@ -11,7 +11,7 @@ const { pageTitle } = Astro.props;
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>{ pageTitle } - Aldy's Blog</title>
+        <title>{ pageTitle  } - Aldy's Blog</title>
         <link rel="shortcut icon" href="../../aaaaaaaaaa.jpeg" type="image/x-icon">
     </head>
     <body>
@@ -20,6 +20,9 @@ const { pageTitle } = Astro.props;
         </header>
             <Navigation></Navigation>
         <main>
+            <h2>{frontmatter.title}</h2>
+            <p>{frontmatter.pubDate}</p>
+            <p>{frontmatter.tags}</p>
             <slot />
         </main>
         <Footer></Footer>
@@ -29,5 +32,8 @@ const { pageTitle } = Astro.props;
 <style>
     body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    img {
+        width: 50%;
     }
 </style>
