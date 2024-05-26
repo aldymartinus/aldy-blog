@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home";
-const thoughts = await Astro.glob('../pages/thoughts/*.mdx');
+const thoughts = (await Astro.glob('../pages/thoughts/*.mdx'))
+.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 ---
 
 <BaseLayout pageTitle = { pageTitle }>

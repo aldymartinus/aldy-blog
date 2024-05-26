@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro'
 import '../styles/global.css'
-const { pageTitle, frontmatter } = Astro.props;  
+const {frontmatter } = Astro.props;  
 const pubDate = new Date(frontmatter.pubDate).toUTCString().slice(0,16);
 ---
 
@@ -12,7 +12,7 @@ const pubDate = new Date(frontmatter.pubDate).toUTCString().slice(0,16);
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>{ pageTitle  } - Aldy's Blog</title>
+        <title>{ frontmatter.title }</title>
         <link rel="shortcut icon" href="../../aaaaaaaaaa.jpeg" type="image/x-icon">
     </head>
     <body>
@@ -24,7 +24,7 @@ const pubDate = new Date(frontmatter.pubDate).toUTCString().slice(0,16);
             <div id="content">
                 <h3 id="post-title">{frontmatter.title}</h3>
                 <p id="last-update-time">Last updated: {pubDate}</p>
-                <p>{frontmatter.tags}</p>
+                <p>{`${frontmatter.tags}`}</p>
                 <slot />
             </div>
         </main>
@@ -36,8 +36,10 @@ const pubDate = new Date(frontmatter.pubDate).toUTCString().slice(0,16);
     body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    img {
-        width: 50%;
+    .mdx-img {
+        text-align: center;
+        display: none;
+        border: 5px solid red;
     }
     #content {
         margin: 0.8rem;
