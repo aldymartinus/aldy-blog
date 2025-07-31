@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Articles";
+const haiku = await Astro.glob("../pages/haiku/*.mdx");
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <div id="haiku-list">
+        {
+            haiku.map((post) => {
+                const pubDate = new Date(post.frontmatter.pubDate)
+                    .toUTCString()
+                    .slice(0, 16);
+                return (
+                    <div id="article-list">
+                        {/* <a href={post.url} id="article-title">{post.frontmatter.title}</a> */}
+                        <div id="content">
+                            <post.Content />
+                        </div>
+                        <span id="pub-date">{pubDate}</span>
+                    </div>
+                );
+            })
+        }
+    </div>
+</BaseLayout>
+
+<style>
+    #haiku-list > :nth-child(n + 2) {
+        border-top: 1px solid #ddd;
+    }
+    #content {
+        text-align: center;
+    }
+    #article-list {
+        display: flex;
+        flex-direction: column;
+        margin:  0 0.3rem 0.2rem 0.3rem;
+        padding: 0.3rem;
+    }
+    #article-title:hover {
+        text-decoration: underline;
+    }
+    #pub-date {
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: #999;
+    }
+</style>

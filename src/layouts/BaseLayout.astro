@@ -1,9 +1,9 @@
 ---
-import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro'
-import '../styles/global.css'
-const { pageTitle } = Astro.props;  
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+const { pageTitle } = Astro.props;
 ---
 
 <html lang="en">
@@ -11,23 +11,38 @@ const { pageTitle } = Astro.props;
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>{ pageTitle } - Aldy's Blog</title>
-        <link rel="shortcut icon" href="../../aaaaaaaaaa.jpeg" type="image/x-icon">
+        <title>{pageTitle} - Aldy's Blog</title>
+        <link
+            rel="shortcut icon"
+            href="../../aaaaaaaaaa.jpeg"
+            type="image/x-icon"
+        />
     </head>
     <body>
         <header>
-            <Header></Header>
+            <Header />
         </header>
-            <Navigation></Navigation>
+        <Navigation />
         <main>
             <slot />
         </main>
-        <Footer></Footer>
+        <Footer />
     </body>
 </html>
 
 <style>
     body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    header {
+        width: 50%;
+    }
+    @media screen and (max-width: 900px) {
+        header {
+            width: 100%;
+        }
     }
 </style>

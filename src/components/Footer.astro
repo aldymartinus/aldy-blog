@@ -2,12 +2,14 @@
 
 ---
 
-<footer>Built with <a href="https://astro.build/" target="_blank">Astro 🚀</a></footer>
+<footer>
+  Built with <a href="https://astro.build/" target="_blank">Astro 🚀</a>
+</footer>
 
 <style>
   footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
+    width: 50%;
     padding: 0.2rem 0;
     bottom: 0;
     color: #fff;
@@ -23,5 +25,10 @@
   }
   a:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 900px) {
+    footer {
+      width: 100%;
+    }
   }
 </style>
