@@ -4,10 +4,9 @@ author: Aldy Martinus
 pubDate: 2024-04-06
 ---
 
-
-<h3 align="center">Welcome To My Profile 👋</h3>
+<h3 align="center" >Welcome To My Profile 👋</h3>
 <p align="center" width="100%">
-  <img width="50%" src="https://64.media.tumblr.com/65751116d956ff4888ced4339a44644e/34820597a9b7520e-c8/s540x810/a5f7bec1d4897193c359335ae925405e894ff084.gifv" alt="el gato">
+  <img width="45%" src="https://raw.githubusercontent.com/aldymartinus/cdn/refs/heads/master/a5f7bec1d4897193c359335ae925405e894ff084.gif" alt="Kuroi JiJi">
 </p>
 
 ----
@@ -19,17 +18,19 @@ pubDate: 2024-04-06
     - 🇬🇧 English
     - 🇨🇳 Chinese
 - 💻 Comfortable with
-    - Javascript, Typescript
+    - Javascript
+    - Svelte
     - Node JS
     - HTML
-    - CSS
+    - CSS, Tailwind CSS
   
 ---
 
 ### Current Working Environment 🖥️
-- Operating System `Endeavour OS`
-- Terminal `suckless simple terminal` with `Oh My Fish!`
+- Operating System `Debian`
+- Terminal `Xterm` with `zsh`
 - Text Editor `Visual Studio Code`
 
 ---
-[![Code_Wars](https://www.codewars.com/users/aldymartinus/badges/small)](https://www.codewars.com/users/aldymartinus)
+[![Code_Wars](https://www.codewars.com/users/aldymartinus/badges/small)]()
+
