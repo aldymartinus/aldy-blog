@@ -27,9 +27,9 @@ const ap = new APlayer({
         },
         {
             name: 'Prahara Cinta',
-            artist: 'Lydia Imaniar',
+            artist: 'Lydia & Imaniar',
             url: `${url}04 Lydia Imaniar -  Prahara Cinta.mp3`,
-            // cover: `${url}cover-webp/Festival Lagu Populer Indonesia (1985).webp`,
+            cover: `${url}cover-webp/Prahara Cinta - Lydia & Imaniar (1987).webp`,
             theme: '#4165ba'
         }, {
             name: 'Masa Bodo',
@@ -65,8 +65,8 @@ const ap = new APlayer({
         {
             name: 'Sakura',
             artist: 'Fariz RM',
-            url: `${url}10 Fariz RM - Sakura.mp3`,
-            // cover: `${url}cover-webp/January Christy - Melayang (1986).webp`,
+            url: `${url}10 Fariz RM - 桜.mp3`,
+            cover: `${url}cover-webp/Fariz RM - Sakura (1980).jpeg`,
             theme: '#4165ba'
         }, {
             name: 'Melayang',
