@@ -72,7 +72,7 @@ const ap = new APlayer({
             name: 'Melayang',
             artist: 'January Christy',
             url: `${url}11 January Christy -  Melayang.mp3`,
-            cover: `${url}cover-webp/January Christy - Melayang (1986).webp`,
+            cover: `${url}cover-webp/rev_January Christy - Melayang (1986).webp`,
             theme: '#4165ba'
         }, {
             name: 'Perdamaian',
